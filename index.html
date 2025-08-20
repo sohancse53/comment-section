@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM practice</title>
+
+    <!-- cdn tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-[100vh] flex flex-col justify-center items-center space-y-3">
+    <h1 class="text-3xl font-bold text-red-700 animate-pulse ">Like Comment and Share Field</h1>
+    <div id="newDiv" class="overflow-y-auto bg-slate-300 w-2/3 h-60 border-2 border-red-600 p-10">
+
+    </div>
+    <div class="w-full flex justify-center items-center gap-4">
+      <input id="input" type="text" placeholder="type comment" class="bg-slate-500 text-white px-6 py-2 text-xl">
+      <button
+        id="like"
+        class=" px-2 py-2 bg-sky-700  text-white rounded-md cursor-pointer hover:scale-105"
+      >
+        <span id="likeCount"></span> Like
+      </button>
+      <button
+        id="comment"
+        class=" px-4 py-2 bg-yellow-700 text-white rounded-md cursor-pointer hover:scale-105"
+      >
+        <span id="commentCount"></span> Comment
+      </button>
+      <button
+        id="share"
+        class=" px-4 py-2 bg-green-700 text-white rounded-md cursor-pointer hover:scale-105"
+      >
+        <span id="shareCount"></span> Share
+      </button>
+    </div>
+    <!-- <h1 id="text" class="text-2xl bg-slate-900 text-white px-8 py-2 hover:animate-pulse shadow-md">click any button</h1> -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
